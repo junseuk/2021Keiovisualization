@@ -4,11 +4,26 @@
     <title>Visualization</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
   </head>
   <body>
-    <p>first paragraph</p>
+    <div id="main">
+      <div style="text-align: center;">Junseuk's playlist</div>
+      <div style="text-align: center;">Genres - Artists - Albums</div>
+      <div id="sequence"></div>
+      <div id="chart">
+        <div id="explanation" style="visibility: hidden;">
+          <span id="percentage"></span><br/>
+          songs fell into this category.
+        </div>
+      </div>
+    </div>
+    <!-- <div id="sidebar">
+      <input type="checkbox" id="togglelegend"> Legend<br/>
+      <div id="legend" style="visibility: hidden;"></div>
+    </div> -->
   </body>
-  <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
-  <script src="index.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="sunburst.js"></script>
 </html>
+
